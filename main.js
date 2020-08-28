@@ -29,7 +29,7 @@ $(document).ready(function() {
     );
     // Selezione genere
     var genere = $('select').val();
-    if (genere ==  ) {
-        
-    }
+    // if (genere == {{genre}}) {
+    //     $('{{genre}}').show();
+    // }
 });
