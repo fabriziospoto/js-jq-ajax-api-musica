@@ -28,8 +28,16 @@ $(document).ready(function() {
         }
     );
     // Selezione genere
-    var genere = $('select').val();
-    // if (genere == {{genre}}) {
-    //     $('{{genre}}').show();
-    // }
+    $("select").change(function(){
+        // Trovo select
+        $(this).find("option:selected").each(function(){
+            //Trovo valore option
+            var optionValue = $(this).attr("value");
+            // Tramite if mostro genere corrispondente e nascondo gli altri. Aggiungo classe "all" per valore all
+            if(optionValue){
+                $(".cd").not("." + optionValue).hide();
+                $("." + optionValue).show();
+            }
+        });
+    })
 });

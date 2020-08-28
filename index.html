@@ -18,7 +18,7 @@
         <select class="" name="">
             <option value="all">All</option>
             <option value="Pop">Pop</option>
-            <option value="rock">Rock</option>
+            <option value="Rock">Rock</option>
             <option value="Metal">Metal</option>
             <option value="Jazz">Jazz</option>
         </select>
@@ -27,7 +27,7 @@
         </div>
 
         <script id="entry-template" type="text/x-handlebars-template">
-            <div class="cd {{genre}}">
+            <div class="cd {{genre}} all">
                 <img src="{{poster}}" alt="copertina">
                 <h3>{{title}}</h3>
                 <span class="author">{{author}}</span>
